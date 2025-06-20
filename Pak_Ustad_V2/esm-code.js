@@ -12,7 +12,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     try {
         const response = await axios.post('https://lemon-ustad.vercel.app/api/generate-image', {
             isi: text,
-            option: "type2" // hanha tersedia type1 dan type2
+            option: "type2" // hanya tersedia type1 dan type2
         }, {
             responseType: 'arraybuffer',
             headers: { 'Content-Type': 'application/json' }
