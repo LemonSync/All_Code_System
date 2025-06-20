@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
   try {
     const response = await axios.post('https://lemon-welcome.vercel.app/api/generate-image', {
       isi,
-      option: "type1" // hanya tersedia type1 dan type2
+      option: "type2" // hanya tersedia type1 dan type2
     }, {
       responseType: 'arraybuffer',
       headers: { 'Content-Type': 'application/json' }
